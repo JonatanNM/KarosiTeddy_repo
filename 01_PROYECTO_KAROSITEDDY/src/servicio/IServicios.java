@@ -1,15 +1,25 @@
 package servicio;
 
-import domain.Bean;
 
-/**
- *
- * @author Antonio
- */
+import domain.Producto;
+
+
 public interface IServicios {
 
-    public void agregar();
-    public void agregar(Bean b);
+	public void altaProducto();
 
-//42 metodos más
+	public void altaProducto(Producto p);
+
+	public void bajaProducto();
+
+	public void bajaProducto(Producto p);
+
+	public void modificarProducto();
+
+	public void modificarProducto(Producto p);
+	
+	public void recuperarProducto();
+
+	public void recuperarProducto(Producto p);
+
 }
