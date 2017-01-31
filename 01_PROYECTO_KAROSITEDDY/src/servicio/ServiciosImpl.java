@@ -1,24 +1,61 @@
 package servicio;
 
-import datos.ColeccionImpl;
-import datos.IColeccion;
-import domain.Bean;
+import datos.ColeccionProductoImpl;
+import datos.IColeccionProductos;
+import domain.Producto;
 
-/**
- *
- * @author Antonio
- */
+
 public class ServiciosImpl implements IServicios {
 
-    IColeccion col = new ColeccionImpl();
+    IColeccionProductos col = new ColeccionProductoImpl();
 
+ 
     @Override
-    public void agregar() {
-        col.agregar();
-    }
+	public void altaProducto() {
+		col.altaProducto();
+		
+	}
 
-    @Override
-    public void agregar(Bean b) {
-        col.agregar(b);
-    }
+	@Override
+	public void altaProducto(Producto p) {
+		col.altaProducto(p);
+		
+	}
+
+	@Override
+	public void bajaProducto() {
+	col.bajaProducto();
+		
+	}
+
+	@Override
+	public void bajaProducto(Producto p) {
+		col.bajaProducto(p);
+		
+	}
+
+	@Override
+	public void modificarProducto() {
+		col.modificarProducto();
+		
+	}
+
+	@Override
+	public void modificarProducto(Producto p) {
+		col.modificarProducto(p);
+		
+	}
+
+	@Override
+	public void recuperarProducto() {
+		col.recuperarProducto();
+		
+	}
+
+	@Override
+	public void recuperarProducto(Producto p) {
+		col.recuperarProducto(p);
+		
+	}
+	
 }
