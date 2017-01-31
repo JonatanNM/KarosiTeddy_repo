@@ -1,6 +1,7 @@
 package servicio;
 
 
+import domain.Cliente;
 import domain.Producto;
 
 
@@ -21,5 +22,21 @@ public interface IServicios {
 	public void recuperarProducto();
 
 	public void recuperarProducto(Producto p);
+	
+	public void altaClientes();
+
+	public void altaClientes(Cliente c);
+
+	public void bajaClientes();
+
+	public void bajaClientes(Cliente c);
+
+	public void modificarClientes();
+
+	public void modificarClientes(Cliente c);
+	
+	public void recuperarClientes();
+
+	public void recuperarClientes(Cliente c);
 
 }

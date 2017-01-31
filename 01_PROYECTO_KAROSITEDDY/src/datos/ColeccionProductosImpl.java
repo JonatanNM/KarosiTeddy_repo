@@ -6,11 +6,11 @@ import java.util.List;
 import datos.IColeccionProductos;
 import domain.Producto;
 
-public class ColeccionProductoImpl implements IColeccionProductos {
+public class ColeccionProductosImpl implements IColeccionProductos {
 	
 	 private List<Producto> listadoProd = new ArrayList<>();
 
-	    public ColeccionProductoImpl() {
+	    public ColeccionProductosImpl() {
 	    }
 
 	    public List<Producto> getListadoProd() {

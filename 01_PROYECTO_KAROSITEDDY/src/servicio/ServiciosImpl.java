@@ -1,61 +1,115 @@
 package servicio;
 
-import datos.ColeccionProductoImpl;
+import datos.ColeccionClientesImpl;
+import datos.ColeccionProductosImpl;
 import datos.IColeccionProductos;
+import datos.IColeccionClientes;
+import domain.Cliente;
 import domain.Producto;
 
 
 public class ServiciosImpl implements IServicios {
 
-    IColeccionProductos col = new ColeccionProductoImpl();
+    IColeccionProductos colPro = new ColeccionProductosImpl();
+    IColeccionClientes colCli = new ColeccionClientesImpl();
 
  
     @Override
 	public void altaProducto() {
-		col.altaProducto();
+    	colPro.altaProducto();
 		
 	}
 
 	@Override
 	public void altaProducto(Producto p) {
-		col.altaProducto(p);
+		colPro.altaProducto(p);
 		
 	}
 
 	@Override
 	public void bajaProducto() {
-	col.bajaProducto();
+		colPro.bajaProducto();
 		
 	}
 
 	@Override
 	public void bajaProducto(Producto p) {
-		col.bajaProducto(p);
+		colPro.bajaProducto(p);
 		
 	}
 
 	@Override
 	public void modificarProducto() {
-		col.modificarProducto();
+		colPro.modificarProducto();
 		
 	}
 
 	@Override
 	public void modificarProducto(Producto p) {
-		col.modificarProducto(p);
+		colPro.modificarProducto(p);
 		
 	}
 
 	@Override
 	public void recuperarProducto() {
-		col.recuperarProducto();
+		colPro.recuperarProducto();
 		
 	}
 
 	@Override
 	public void recuperarProducto(Producto p) {
-		col.recuperarProducto(p);
+		colPro.recuperarProducto(p);
 		
 	}
 	
+	@Override
+	public void altaClientes() {
+		colCli.altaClientes();
+		
+	}
+
+	@Override
+	public void altaClientes(Cliente c) {
+		colCli.altaClientes(c);
+		
+	}
+
+	@Override
+	public void bajaClientes() {
+		colCli.bajaClientes();
+		
+	}
+
+	@Override
+	public void bajaClientes(Cliente c) {
+		colCli.bajaClientes(c);
+		
+	}
+
+	@Override
+	public void modificarClientes() {
+		colCli.modificarClientes();
+		
+	}
+
+	@Override
+	public void modificarClientes(Cliente c) {
+		colCli.modificarClientes(c);
+		
+	}
+
+	@Override
+	public void recuperarClientes() {
+		colCli.recuperarClientes();
+		
+	}
+
+	@Override
+	public void recuperarClientes(Cliente c) {
+		colCli.recuperarClientes(c);
+		
+	}
 }
+
+	
+
