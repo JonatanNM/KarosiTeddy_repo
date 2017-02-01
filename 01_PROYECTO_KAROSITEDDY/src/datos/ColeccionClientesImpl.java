@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import domain.Cliente;
-import domain.Producto;
 import datos.IColeccionClientes;
 
 public class ColeccionClientesImpl implements IColeccionClientes{
