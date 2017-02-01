@@ -4,22 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import domain.Cliente;
-import domain.Producto;
 import datos.IColeccionClientes;
 
 public class ColeccionClientesImpl implements IColeccionClientes{
 	
-	private List<Cliente> listadoProd = new ArrayList<>();
+	private List<Cliente> listadoCli = new ArrayList<>();
 
     public ColeccionClientesImpl() {
     }
 
-    public List<Cliente> getListadoProd() {
-        return listadoProd;
+    public List<Cliente> getListadoCli() {
+        return listadoCli;
     }
 
-    public void setListadoProd(List<Cliente> listadoProd) {
-        this.listadoProd = listadoProd;
+    public void setListadoCli(List<Cliente> listadoCli) {
+        this.listadoCli = listadoCli;
     }
 
 	@Override
@@ -29,7 +28,7 @@ public class ColeccionClientesImpl implements IColeccionClientes{
 	}
 
 	@Override
-	public void altaClientes(Cliente p) {
+	public void altaClientes(Cliente c) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -41,7 +40,7 @@ public class ColeccionClientesImpl implements IColeccionClientes{
 	}
 
 	@Override
-	public void bajaClientes(Cliente p) {
+	public void bajaClientes(Cliente c) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -53,7 +52,7 @@ public class ColeccionClientesImpl implements IColeccionClientes{
 	}
 
 	@Override
-	public void modificarClientes(Cliente p) {
+	public void modificarClientes(Cliente c) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -65,7 +64,7 @@ public class ColeccionClientesImpl implements IColeccionClientes{
 	}
 
 	@Override
-	public void recuperarClientes(Cliente p) {
+	public void recuperarClientes(Cliente c) {
 		// TODO Auto-generated method stub
 		
 	}
