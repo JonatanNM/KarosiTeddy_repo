@@ -8,15 +8,17 @@ public abstract class Persona {
 	private String apellidos_per;
 	private String email;
 	private String password;
+	private int id_persona;
 
 	public Persona() {
 
 	}
-	public Persona(String nombre_per, String apellidos_per, String email, String password) {
+	public Persona(String nombre_per, String apellidos_per, String email, String password, int id_persona) {
 		this.nombre_per = nombre_per;
 		this.apellidos_per = apellidos_per;
 		this.email = email;
 		this.password = password;
+		this.id_persona = id_persona;
 	}
 
 	public String getNombre_per() {
@@ -54,6 +56,12 @@ public abstract class Persona {
 		this.password = password;
 	}
 
+	public int getId_persona() {
+		return id_persona;
+	}
+	public void setId_persona(int id_persona) {
+		this.id_persona = id_persona;
+	}
 	public void crearPersona() {
 
 		this.nombre_per = LecturaDatos.leerString("Introduzca su Nombre:");

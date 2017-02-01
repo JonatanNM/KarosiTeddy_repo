@@ -1,61 +1,112 @@
 package servicio;
 
+import datos.ColeccionClientesImpl;
 import datos.ColeccionProductoImpl;
 import datos.IColeccionProductos;
+import datos.IColeccionClientes;
+import domain.Cliente;
 import domain.Producto;
 
 
 public class ServiciosImpl implements IServicios {
 
-    IColeccionProductos col = new ColeccionProductoImpl();
+    IColeccionProductos colProd = new ColeccionProductoImpl();
+    IColeccionClientes colCli = new ColeccionClientesImpl();
 
  
     @Override
 	public void altaProducto() {
-		col.altaProducto();
+		colProd.altaProducto();
 		
 	}
 
 	@Override
 	public void altaProducto(Producto p) {
-		col.altaProducto(p);
+		colProd.altaProducto(p);
 		
 	}
 
 	@Override
 	public void bajaProducto() {
-	col.bajaProducto();
-		
+		colProd.bajaProducto();
 	}
 
 	@Override
 	public void bajaProducto(Producto p) {
-		col.bajaProducto(p);
+		colProd.bajaProducto(p);
 		
 	}
 
 	@Override
 	public void modificarProducto() {
-		col.modificarProducto();
+		colProd.modificarProducto();
 		
 	}
 
 	@Override
 	public void modificarProducto(Producto p) {
-		col.modificarProducto(p);
+		colProd.modificarProducto(p);
 		
 	}
 
 	@Override
 	public void recuperarProducto() {
-		col.recuperarProducto();
+		colProd.recuperarProducto();
 		
 	}
 
 	@Override
 	public void recuperarProducto(Producto p) {
-		col.recuperarProducto(p);
+		colProd.recuperarProducto(p);
 		
 	}
 	
+	
+	@Override
+	public void altaCliente() {
+		colCli.altaCliente();
+		
+	}
+
+	@Override
+	public void altaCliente(Cliente c) {
+		colCli.altaCliente(c);
+		
+	}
+
+	@Override
+	public void bajaCliente() {
+		colCli.bajaCliente();
+		
+	}
+
+	@Override
+	public void bajaCliente(Cliente c) {
+		colCli.bajaCliente(c);
+		
+	}
+
+	@Override
+	public void modificarCliente() {
+		colCli.modificarCliente();
+		
+	}
+
+	@Override
+	public void modificarCliente(Cliente c) {
+		colCli.modificarCliente(c);
+		
+	}
+
+	@Override
+	public void recuperarCliente() {
+		colCli.recuperarCliente();
+		
+	}
+
+	@Override
+	public void recuperarCliente(Cliente c) {
+		colCli.recuperarCliente(c);
+		
+	}
 }

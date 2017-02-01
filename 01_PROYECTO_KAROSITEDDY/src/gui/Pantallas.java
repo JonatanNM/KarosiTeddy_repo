@@ -1,9 +1,5 @@
 package gui;
 
-/**
- *
- * @author Antonio
- */
 public class Pantallas {
     
     public static void Pantalla01(){
@@ -12,10 +8,10 @@ public class Pantallas {
     
     public static void Pantalla02(){
         
-        System.out.println(" /n--- APLICACIÃ“N --- v1/n");
+        System.out.println(" /n--- APLICACIÓN --- v1/n");
         System.out.println("************************************************");
         System.out.println("*  Por favor, escoge una opcion: ");
-        System.out.println("*    1.- Dar de alta un producto");
+        System.out.println("*    1.- Dar de alta un Cliente");
         System.out.println("*    2.- Eliminar un producto");
         System.out.println("*    3.- Listar los productos existentes");
         System.out.println("*    4.- Modificar un producto");

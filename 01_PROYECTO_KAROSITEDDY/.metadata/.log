@@ -1,0 +1,53 @@
+!SESSION 2017-02-01 16:20:45.715 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\Users\Administrador\Desktop\KarosiTeddy_repo\01_PROYECTO_KAROSITEDDY -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.osgi 2 0 2017-02-01 16:22:06.020
+!MESSAGE While loading class "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1", thread "Thread[Worker-0,5,main]" timed out waiting (5022ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.egit.ui_4.6.0.201612231935-r [931]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.egit.ui"; type="osgi.bundle"; version:Version="4.6.0.201612231935-r"; singleton:="true" [id=931] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1.run(ConfigurationChecker.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2017-02-01 16:22:15.534
+!MESSAGE While loading class "org.eclipse.egit.core.Activator", thread "Thread[Worker-0,5,main]" timed out waiting (5034ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.egit.core_4.6.0.201612231935-r [928]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.egit.core.Activator" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.egit.core"; type="osgi.bundle"; version:Version="4.6.0.201612231935-r"; singleton:="true" [id=928] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:386)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.run(Activator.java:615)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-01 16:23:56.983
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrador'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

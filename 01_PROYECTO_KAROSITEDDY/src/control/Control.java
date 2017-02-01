@@ -5,10 +5,6 @@ import servicio.IServicios;
 import servicio.ServiciosImpl;
 import utilidades.LecturaDatos;
 
-/**
- *
- * @author Antonio
- */
 public class Control {
 
     private final IServicios lista = new ServiciosImpl();
@@ -19,7 +15,7 @@ public class Control {
             Pantallas.Pantalla01();
             seguir = this.seleccionOpciones();
         } while (seguir);
-        System.out.println("   --- Fin de la sesion ---");
+        System.out.println("   --- Fin de la sesión ---");
     }
 
     public boolean seleccionOpciones() {
@@ -31,7 +27,7 @@ public class Control {
             switch (LecturaDatos.leerInteger()) {
                 case 1:
                     //ALTA
-                    lista.agregar();
+                    lista.altaCliente();
                     break;
                 case 2:
                     //ELIMINAR
@@ -52,7 +48,7 @@ public class Control {
     }
 
     private boolean salir() throws Exception {
-        String sino = LecturaDatos.leerString("   Â¿EstÃ¡ seguro?(S/N)");
+        String sino = LecturaDatos.leerString("   Estás seguro?(S/N)");
         return (sino.toUpperCase().charAt(0) != 'S');
     }
 
