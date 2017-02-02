@@ -14,7 +14,7 @@ public class DatosBBDD {
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/supermercado","root","1111");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/karositeddy","root","1111");
         }
         catch (ClassNotFoundException ex) {
             ex.printStackTrace();

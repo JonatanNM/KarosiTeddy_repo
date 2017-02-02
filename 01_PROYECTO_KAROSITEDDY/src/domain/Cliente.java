@@ -51,7 +51,7 @@ public class Cliente extends Persona {
 	
 	@Override
 	public String toString() {
-		return "Cliente [id_cliente=" + id_cliente + ", id_direccion=" + id_direccion + ", fecha_nacimiento="
+		return super.toString() + "Cliente [id_cliente=" + id_cliente + ", id_direccion=" + id_direccion + ", fecha_nacimiento="
 				+ fecha_nacimiento + ", telefono=" + telefono + "]";
 	}
 	@Override
