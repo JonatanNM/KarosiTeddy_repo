@@ -18,7 +18,7 @@ public interface IColeccionClientes {
 	
 	public void recuperarCliente();
 
-	public void recuperarCliente(Cliente c);
+	public Cliente recuperarCliente(Cliente c);
 	
 	
 }

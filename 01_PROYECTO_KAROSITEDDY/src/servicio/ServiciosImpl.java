@@ -64,8 +64,9 @@ public class ServiciosImpl implements IServicios {
 	
 	@Override
 	public void altaCliente() {
-		colCli.altaCliente();
-		
+		Cliente c = new Cliente();
+		c.crearCliente();
+		altaCliente(c);
 	}
 
 	@Override

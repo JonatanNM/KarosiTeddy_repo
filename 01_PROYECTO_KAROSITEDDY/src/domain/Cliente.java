@@ -12,12 +12,12 @@ public class Cliente extends Persona {
 	public Cliente(){
 		
 	}
-	public Cliente(int id_cliente, int id_direccion, String fecha_nacimiento, int telefono) {
+	public Cliente(String nombre_per, String apellidos_per, String email, String password, int id_persona, int id_cliente, String fecha_nacimiento, int telefono, int id_direccion) {
 		super();
 		this.id_cliente = id_cliente;
-		this.id_direccion = id_direccion;
 		this.fecha_nacimiento = fecha_nacimiento;
 		this.telefono = telefono;
+		this.id_direccion = id_direccion;
 	}
 	public int getId_cliente() {
 		return id_cliente;
