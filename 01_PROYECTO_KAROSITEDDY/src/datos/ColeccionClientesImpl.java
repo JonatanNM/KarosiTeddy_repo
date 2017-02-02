@@ -1,5 +1,7 @@
 package datos;
-
+/**
+ * @author Óscar Sánchez
+ */
 import java.util.ArrayList;
 import java.util.List;
 
