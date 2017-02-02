@@ -1,8 +1,14 @@
 package datos;
+<<<<<<< HEAD
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+=======
+/**
+ * @author Óscar Sánchez
+ */
+>>>>>>> refs/remotes/origin/master
 import java.util.ArrayList;
 import java.util.List;
 
