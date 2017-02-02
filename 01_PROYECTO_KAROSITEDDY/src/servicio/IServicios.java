@@ -23,7 +23,6 @@ public interface IServicios {
 
 	public void recuperarProducto(Producto p);
 	
-<<<<<<< HEAD
 	public void altaCliente();
 
 	public void altaCliente(Cliente c);
@@ -37,23 +36,6 @@ public interface IServicios {
 	public void modificarCliente(Cliente c);
 	
 	public void recuperarCliente();
-=======
-	public void altaClientes();
-
-	public void altaClientes(Cliente c);
-
-	public void bajaClientes();
-
-	public void bajaClientes(Cliente c);
-
-	public void modificarClientes();
-
-	public void modificarClientes(Cliente c);
-	
-	public void recuperarClientes();
-
-	public void recuperarClientes(Cliente c);
->>>>>>> refs/remotes/origin/Jonatan
 
 	public void recuperarCliente(Cliente c);
 }
