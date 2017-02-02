@@ -66,6 +66,7 @@ public class Producto {
 		this.precio_prod = LecturaDatos.leerDouble("Introduzca el Precio:");
 		this.cantidad_stock = LecturaDatos.leerInteger("Introduzca la Cantidad del Stock:");
 		this.descripcion_prod = LecturaDatos.leerString("Introduzca una Descripción:");
+		this.id_categoria= LecturaDatos.leerInteger("Indique el número de la categoria");
 	
 	
 	}

@@ -29,9 +29,8 @@ public class Control {
         //Non preocupare do try (si aun no lo hemos visto)
         try {
             switch (LecturaDatos.leerInteger()) {
-                case 1:
-                    //ALTA
-                    lista.agregar();
+                case 1:     
+                    lista.altaProducto();
                     break;
                 case 2:
                     //ELIMINAR

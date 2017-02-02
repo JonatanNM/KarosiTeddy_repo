@@ -10,7 +10,7 @@ public interface IColeccionProductos {
 
 	public void bajaProducto();
 
-	public void bajaProducto(Producto p);
+	public void bajaProducto(String nombre_prod);
 
 	public void modificarProducto();
 
