@@ -13,7 +13,7 @@ public interface IServicios {
 
 	public void bajaProducto();
 
-	public void bajaProducto(Producto p);
+	public void bajaProducto(String p);
 
 	public void modificarProducto();
 
