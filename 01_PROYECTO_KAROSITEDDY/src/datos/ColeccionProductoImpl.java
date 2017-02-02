@@ -21,7 +21,7 @@ public class ColeccionProductoImpl implements IColeccionProductos {
 	        this.listadoProd = listadoProd;
 	    }
 
-		@Override
+	    @Override
 		public void altaProducto() {
 			// TODO Auto-generated method stub
 			
